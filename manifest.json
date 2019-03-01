@@ -1,0 +1,30 @@
+{
+    "name": "Wikizero Direct",
+    "short_name": "wikizero",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "author": "Ahmet Muhsin",
+    "description": "Wikipedia sitesine girmek için 0wikipedia.org adresine yönlendirme yapan eklenti",
+    "browser_action": {
+        "default_icon": "icon/icon.png",
+        "default_popup": "source/popup.html"
+    },
+    "icons": {
+        "16": "icon/icon.png",
+        "48": "icon/icon.png",
+        "128": "icon/icon.png"
+    },
+    "background": {
+        "scripts": [
+            "source/background2.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "http://*.wikipedia.org/",
+        "https://*.wikipedia.org/"
+    ]
+}
