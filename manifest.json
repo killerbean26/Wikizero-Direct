@@ -25,6 +25,8 @@
         "webRequestBlocking",
         "storage",
         "http://*.wikipedia.org/",
-        "https://*.wikipedia.org/"
+        "https://*.wikipedia.org/",
+        "https://*.imgur.com/",
+        "http://*.imgur.com/"
     ]
 }
