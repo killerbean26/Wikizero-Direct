@@ -3,7 +3,7 @@ chrome.webRequest.onBeforeRequest.addListener(
         var active_url = temp.url;
         var host = active_url.match(/(https?:\/\/|www\.?)(www\.)?([^\/\s]+)/ig)[0];
        if (host.includes("wikipedia.org")){
-            host = host.replace("wikipedia.org","0wikipedia.org");
+            host = host.replace("wikipedia.org","1wikipedia.org");
         }
         else if (host.includes("imgur.com")){
             host = host.replace("imgur.com","0imgur.com");
